@@ -13,7 +13,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#home">
-                <i class="fas fa-solar-panel me-2"></i>
+                <img src="IWMI_logo.png" alt="IWMI Logo">
                 Solar Sustainability Map
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="#about">About Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#feedback">Feedback</a>
+                        <a class="nav-link" href="feedback-embedded.html">Feedback</a>
                     </li>
                 </ul>
             </div>
@@ -42,27 +42,27 @@
     <section id="home" class="hero-section">
         <div class="container">
             <div class="row align-items-center min-vh-100">
-                <div class="col-lg-6">
-                    <h1 class="display-4 fw-bold text-white mb-4">
+                <div class="col-lg-6 hero-content">
+                    <h1 class="hero-title">
                         Solar Sustainability Mapping Platform
                     </h1>
-                    <p class="lead text-white-50 mb-4">
-                        Explore solar energy potential and sustainability metrics across different regions with our interactive dashboard powered by advanced geospatial analysis.
+                    <p class="hero-subtitle">
+                        Explore solar energy potential and sustainability metrics across different regions with our interactive dashboard powered by advanced geospatial analysis and cutting-edge research.
                     </p>
-                    <div class="d-flex gap-3">
+                    <div class="hero-buttons">
                         <a href="#dashboard" class="btn btn-light btn-lg">
-                            <i class="fas fa-chart-line me-2"></i>
+                            <i class="fas fa-chart-line"></i>
                             View Dashboard
                         </a>
                         <a href="#about" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-info-circle me-2"></i>
+                            <i class="fas fa-info-circle"></i>
                             Learn More
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-image">
-                        <i class="fas fa-solar-panel hero-icon"></i>
+                        <img src="SolarSustainability.png" alt="Solar Sustainability Visualization" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -72,13 +72,11 @@
     <!-- Dashboard Section -->
     <section id="dashboard" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 fw-bold">Interactive Dashboard</h2>
-                    <p class="lead text-muted">
-                        Access our comprehensive solar sustainability mapping tool
-                    </p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">Interactive Dashboard</h2>
+                <p class="section-subtitle">
+                    Access our comprehensive solar sustainability mapping tool with advanced analytics and real-time data visualization
+                </p>
             </div>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
@@ -109,13 +107,11 @@
     <!-- About Us Section -->
     <section id="about" class="py-5">
         <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 fw-bold">About Us</h2>
-                    <p class="lead text-muted">
-                        Learn about our organization and the team behind this project
-                    </p>
-                </div>
+            <div class="section-header">
+                <h2 class="section-title">About Us</h2>
+                <p class="section-subtitle">
+                    Learn about our organization and the dedicated team behind this innovative project
+                </p>
             </div>
             
             <!-- IWMI Section -->
@@ -176,65 +172,6 @@
                                     View Profile
                                 </a>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Feedback Section -->
-    <section id="feedback" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center mb-5">
-                    <h2 class="display-5 fw-bold">Feedback</h2>
-                    <p class="lead text-muted">
-                        We value your input and suggestions for improving our platform
-                    </p>
-                </div>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-8">
-                    <div class="card shadow border-0">
-                        <div class="card-body p-5">
-                            <form id="feedbackForm">
-                                <div class="row">
-                                    <div class="col-md-6 mb-3">
-                                        <label for="name" class="form-label">Name</label>
-                                        <input type="text" class="form-control" id="name" required>
-                                    </div>
-                                    <div class="col-md-6 mb-3">
-                                        <label for="email" class="form-label">Email</label>
-                                        <input type="email" class="form-control" id="email" required>
-                                    </div>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="subject" class="form-label">Subject</label>
-                                    <input type="text" class="form-control" id="subject" required>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="message" class="form-label">Message</label>
-                                    <textarea class="form-control" id="message" rows="5" required></textarea>
-                                </div>
-                                <div class="mb-3">
-                                    <label for="rating" class="form-label">Rate your experience</label>
-                                    <select class="form-select" id="rating">
-                                        <option value="">Select rating</option>
-                                        <option value="5">⭐⭐⭐⭐⭐ Excellent</option>
-                                        <option value="4">⭐⭐⭐⭐ Good</option>
-                                        <option value="3">⭐⭐⭐ Average</option>
-                                        <option value="2">⭐⭐ Poor</option>
-                                        <option value="1">⭐ Very Poor</option>
-                                    </select>
-                                </div>
-                                <div class="d-grid">
-                                    <button type="submit" class="btn btn-primary btn-lg">
-                                        <i class="fas fa-paper-plane me-2"></i>
-                                        Send Feedback
-                                    </button>
-                                </div>
-                            </form>
                         </div>
                     </div>
                 </div>
